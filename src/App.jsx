@@ -4,6 +4,7 @@ import './App.css'
 import Nav from './components/Nav'
 import {Route,Routes} from "react-router-dom"
 import CharacterList from './pages/CharacterList'
+import About from './pages/About'
 
 function App() {
 const ApiKey = "6c0449139fef768893d53a950434b901"
@@ -13,11 +14,10 @@ const ApiKey = "6c0449139fef768893d53a950434b901"
     <div className='App'>
     This is the App
     <Nav/>
-      {/* <Nav/>
        <Routes>
-       <Route path = "/" element = {<CharacterList/>}/>
+       <Route path = "*" element = {<CharacterList/>}/>
        <Route path = "/about" element = {<About/>}/>
-      </Routes> */}
+      </Routes>
 
       <CharacterList/>
     </div>

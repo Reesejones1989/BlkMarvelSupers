@@ -1,19 +1,19 @@
 import {Link} from 'react-router-dom'
+import "./Nav.css"
 
 export default function Nav(props) {
   return (
     <div className='Nav'>
-    {/* <Link to="/">
-        <div>Home</div>
+    <Link to="/">
+        <div>Character List</div>
     </Link>
     <Link to="/about">
         <div>About</div>
     </Link>
-    <Link to="/characterList">
+    {/* <Link to="/">
         <div>Character List</div>
     </Link> */}
 
-    Nav Bar
     </div>
   )
 }
