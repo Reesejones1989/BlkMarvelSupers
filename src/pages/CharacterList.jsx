@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import CharacterDisplay from "./old-CharacterDisplay";
 
 export default function CharacterList(props){
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import CharacterList from './CharacterList';
-import CharacterDisplay from './old-CharacterDisplay';
 import BlkHeroes from '../data';
 
 export default function Home() {
