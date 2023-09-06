@@ -1,54 +1,55 @@
+import React from 'react'
 import {useParams} from "react-router-dom"
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
-function CharacterDisplay (){
-    const ApiKey = "6c0449139fef768893d53a950434b901"
-    const Hash = "a1456f3d7623426b95fae93e26689168"
-    const url = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${ApiKey}&hash=${Hash}`
+export default function CharacterDisplay(props) {
+  
+    const apiKey = "6c0449139fef768893d53a950434b901"
     const params = useParams()
-    const heroName = params.heroName;
+    const heroName = params.heroName
 
-    const [hero, setHero] = useState("null")
+    const url = `https://www.superheroapi.com/api.php/10232758396241709/search/${heroName}`
+  
+    // console.log(heroName)
+  
+    const [hero, setHero] = useState(null);
 
-    const getHero = async () =>{
-        const response = await fetch (url);
-        const data = await response.json();
-        setHero(data);};
-        useEffect(() => {getHero()}, []);
+// console.log(coin)
+const getHero = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setHero(data);
+   };
+   useEffect(() => {
+    getHero();
+    }, []);
 
-// console.log(hero.data.results[0].name) //Prints 3-D Man
-// console.log(hero.data.results[0].name)
-// hero.map((heroName, i)=>{
-//     key={i}
-//     return <div>{heroName.data.results[i].name}</div>
-// })
+    const loaded = () => {
+        console.log(hero.results[0].biography.aliases)
+        console.log(hero.results[0].powerstats.intelligence)
+        return (
+          <div>
+            <h1>
+            Hero Name: {hero.results[0].name}
+            </h1>
+            <h2>
+           Hero ID: {hero.results[0].id}
+            </h2>
+            <h2>
+            Alias: {hero.results[0].biography.aliases[0]}
+           {/* Fullname: {hero.results[0].biography.full-name} */}
+            </h2>
+            <h3>Intelligence: {hero.results[0].powerstats.intelligence}
+                <br/> Power: {hero.results[0].powerstats.power}
+            </h3>
+            <img src={hero.results[0].image.url} alt ={hero.results[0].name}/>
+          </div>
+        );
+      };
+  const loading = () => {
+     return <h1>Loading...</h1>;
+    };
 
-        const loaded = () => {
-            // console.log(hero)
-            return (
-              <div>
-                <h1>
-                Name: {hero[0].name}
-                </h1>
-                <h2>
-                Image: 
-                </h2>
-                <h2> Bio: {hero[0].bio} </h2>
-                <h2>First Appearance: {hero[0].fp}</h2>
-              </div>
-            );
-          };
+    return hero && hero ? loaded() : loading();
+};
 
-    
-    return (<div>
-        {/* <img src={hero[0].image}/> */}
-        <h1>Character Image</h1>
-        <h2>Character Name</h2>
-        
-        <h2>First Appearance</h2>
-        <h3>Character Bio</h3>
-        </div>
-    )
-}
-
-export default CharacterDisplay

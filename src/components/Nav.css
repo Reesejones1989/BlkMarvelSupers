@@ -2,4 +2,7 @@
     box-sizing: border-box;
     border-color: black;
     border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: solid;    
 }
