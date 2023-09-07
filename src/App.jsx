@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className='App'>
-    This is the App
     <Nav/>
        <Routes>
        <Route path = "/" element = {<Home/>}/>

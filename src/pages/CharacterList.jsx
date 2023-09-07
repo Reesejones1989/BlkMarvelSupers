@@ -8,16 +8,17 @@ export default function CharacterList(props){
 
 const BlkHeroNames= BlkHeroes.map((oneHero, id)=>{
     
-    return(<li>{oneHero.Name}</li>)
+    // return(<li className="heroes">{oneHero.Name}</li>)
 })
 
 
     return (<div><h1>CharacterList</h1>
-    <ul>
+    
+    {/* <ul> 
         {BlkHeroNames }
 
     </ul>
-    <CharacterDisplay/>
+    <CharacterDisplay/> */}
 
 
     </div>

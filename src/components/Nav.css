@@ -4,5 +4,14 @@
     border: 1px solid black;
     display: flex;
     justify-content: space-evenly;
-    text-decoration: solid;    
+    text-decoration: solid;   
+    height: 80px;
+    /* background-image: image("./desktop/blacksuperheroesbanner.jpg" */
+    background-color: beige;
+}
+
+.Links{
+    text-align: center;
+    font-size:50px ;    
+    color: black;
 }

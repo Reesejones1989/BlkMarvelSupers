@@ -4,10 +4,10 @@ import "./Nav.css"
 export default function Nav(props) {
   return (
     <div className='Nav'>
-    <Link to="/">
+    <Link className='Links' to="/">
         <div>Character List</div>
     </Link>
-    <Link to="/about">
+    <Link className='Links' to="/about">
         <div>About</div>
     </Link>
     {/* <Link to="/">

@@ -1,7 +1,7 @@
 import React from 'react'
 import {useParams} from "react-router-dom"
 import { useState, useEffect } from 'react'
-
+import "./CharacterDisplay.css"
 export default function CharacterDisplay(props) {
   
     const apiKey = "6c0449139fef768893d53a950434b901"
@@ -25,20 +25,22 @@ const getHero = async () => {
     }, []);
 
     const loaded = () => {
-        console.log(hero.results[0].biography.aliases)
-        console.log(hero.results[0].powerstats.intelligence)
+        console.log(hero.results[0]["biography"]["place-of-birth"])
+        // console.log(hero.results.filter("Storm"))
+        // console.log(setHero)
+        // console.log(hero.results[0].powerstats.intelligence)
         return (
-          <div>
+          <div className='Card'>
             <h1>
-            Hero Name: {hero.results[0].name}
+            Name: {hero.results[0].name}
             </h1>
             <h2>
-           Hero ID: {hero.results[0].id}
+            Real Name: {hero.results[0].biography["full-name"]}
             </h2>
             <h2>
-            Alias: {hero.results[0].biography.aliases[0]}
-           {/* Fullname: {hero.results[0].biography.full-name} */}
+           Place of Birth: {hero.results[0]["biography"]["place-of-birth"]}
             </h2>
+        
             <h3>Intelligence: {hero.results[0].powerstats.intelligence}
                 <br/> Power: {hero.results[0].powerstats.power}
             </h3>
