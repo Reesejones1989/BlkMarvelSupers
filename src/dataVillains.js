@@ -4,6 +4,7 @@ const Villains =[
     {name: "Shadow King" , ID: 1009182 },
     {name: "Big Daddy" , ID: 1009297 },
     {name: "Century" , ID: 0 },
+    {name: "Omega Red" , ID: 0 },
 
     
     
