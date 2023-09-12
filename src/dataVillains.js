@@ -5,8 +5,9 @@ const Villains =[
     {name: "Big Daddy" , ID: 1009297 },
     {name: "Century" , ID: 0 },
     {name: "Omega Red" , ID: 0 },
+    {name: "Destroyer"},
+    {name: "Deathlok"},
 
-    
     
 ]
 export default Villains

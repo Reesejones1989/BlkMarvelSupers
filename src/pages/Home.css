@@ -16,7 +16,7 @@ flex:1
 }
 .flex-container{
     display: flex;
-    background-image: linear-gradient(green,white);
+    background-image: linear-gradient(beige,white);
 
 }
 
