@@ -1,10 +1,14 @@
 .Heroes{
 background-color: lightgreen;
 text-align: center;
-
 }
 
 .Villains{
 background-color: lightcoral;
 text-align: center;
+}
+
+.Power{
+    color: Red;
+    
 }

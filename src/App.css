@@ -2,6 +2,8 @@
 .About{
     text-align: center;
     font-size: 10px;
+    /* height: 300px; */
+    border: 1px solid black;
 }
 
 .Heroes .Villains{

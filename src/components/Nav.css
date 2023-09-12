@@ -7,7 +7,8 @@
     text-decoration: solid;   
     height: 80px;
     background-color: beige;
-   
+    /* background-image: url(src\components\marvelBanner.jpg); */
+    /* background: beige url(components\marvelBanner.jpg) no-repeat left top; */   
 }
 
 .Links{

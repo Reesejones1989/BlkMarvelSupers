@@ -41,7 +41,7 @@ const getHero = async () => {
            Place of Birth: {hero.results[0]["biography"]["place-of-birth"]}
             </h2>
         
-            <h3>Intelligence: {hero.results[0].powerstats.intelligence}
+            <h3 className='Power'>Intelligence: {hero.results[0].powerstats.intelligence}
                 <br/> Power: {hero.results[0].powerstats.power}
             </h3>
             <img src={hero.results[0].image.url} alt ={hero.results[0].name}/>
