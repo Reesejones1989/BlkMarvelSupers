@@ -1,14 +1,22 @@
 .Heroes{
-background-color: lightgreen;
+/* background-color: lightgreen; */
 text-align: center;
+flex:1
 }
 
 .Villains{
-background-color: lightcoral;
+/* background-color: lightcoral; */
 text-align: center;
+flex:1
 }
 
 .Power{
     color: Red;
-    
+
 }
+.flex-container{
+    display: flex;
+    background-image: linear-gradient(green,white);
+
+}
+

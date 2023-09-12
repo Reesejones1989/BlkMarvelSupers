@@ -6,7 +6,7 @@ import "./Home.css"
 
 export default function Home() {
     return (
-        
+        <div className='flex-container'>
       <div className='Heroes'>
         <div> <h1>Heroes </h1> </div> 
     {BlkHeroes.map((heroName, i) =>{
@@ -16,7 +16,8 @@ export default function Home() {
             <h2>{name}</h2>
             <h3>{id}</h3>
         </Link>)
-    })} 
+    })}
+    </div> 
       
 
 
