@@ -10,7 +10,6 @@ const BlkHeroes =[
     {name: "Power Man" , ID: "638" },
     {name: "Synch"},
     {name: "Brother Voodoo"},
-    {name: "Michelangelo"},
     {name: "Gamora"}
 
     
